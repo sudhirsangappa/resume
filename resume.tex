@@ -18,9 +18,9 @@
 
     %____________________________________________________________________________________
     % Qualifications and Interests
-    \section{\mysidestyle Qualifications and Interests}
+    \section{\mysidestyle Qualifications\\and Interests}
 
-    \begin{list2}
+    \begin{list1}
         \item Keen interest and experience in the Linux desktop, user interface
               design and development, and web-based applications.
         \item Extensive experience with C, C++, and Python, and familiarity with
@@ -33,24 +33,7 @@
         \item Ability to adapt quickly to new situations and environments.
         \item Proven experience shipping large software projects on schedule
               with high quality.
-    \end{list2}
-
-
-    %____________________________________________________________________________________
-    % Education
-    \section{\mysidestyle Education}
-
-    {\bf University of Colorado}, Boulder, Colorado.  May, 2006 \vspace{2mm}%
-    \begin{list1}
-    \item[] Bachelor of Science, Computer Science
-    \item[] Bachelor of Arts, Music
     \end{list1}
-    \ifcv
-        {\bf Fairview High School}, Boulder, Colorado.  June, 2001 \vspace{2mm}%
-        \begin{list1}
-        \item[] Graduated with Honors
-        \end{list1}
-    \fi
 
 
     %____________________________________________________________________________________
@@ -62,30 +45,30 @@
     Beanbag, Inc. is a business founded to support the open-source Review Board
     project. My efforts are currently focused on enabling the use of Review
     Board as a subscription service.
+    \begin{list1}
+    \item I made changes to Review Board to allow secure, multi-tenancy hosting.
+          I built, supported, and advertised \url{RBCommons.com}, and grew sales
+          to make Beanbag, Inc. a profitable company.
+    \item Handled administration aspects of the business, including accounting
+          and finance.
+    \end{list1}
 
     {\bf VMware, Inc.}, Palo Alto, California \vspace{2mm}\\\vspace{1mm}%
     {\sl Senior Member of Technical Staff/Engineering Lead} \hfill {\bf August, 2006 -- present}\\
     At VMware, I have helped build and ship several major products as a Linux
     user interface developer on the Workstation/Player team.
-    \begin{list2}
-    \item I acted as an Engineering Lead (mixed development and project
-          management) for the Workstation 8.0 release. I personally designed and
-          implemented the Workstation as a Server, remote connectivity, and VM
-          library features. Several of these features required working closely
-          with people from across different business units and aligning goals
-          between different product lines. I also helped set schedules, organize
-          cross-functional teams, and guide the release through completion.
-    \item I acted as Tech Lead for the Workstation 7.0 release, helping to guide
-          the release process. My individual contributions for this release
-          included encrypted VMs and the ``pause execution'' feature.
-    \item I coordinated a cross-functional team for Record/Replay (a feature
-          which allows users to record all the execution state of a running VM,
-          down to register values and interrupt timing), and was responsible for
-          the design and implementation of the user interface. This major
-          feature shipped in Workstation 6.5.
-    \item I designed and implemented a revamped fullscreen mode which supports
-          multiple monitors and significant refactoring for single-instance and
-          multiple-window support in Workstation 6.0 on Linux.
+    \begin{list1}
+    \item I've been responsible for the conception, design, and implementation
+          of several major features for Workstation and Player on Linux.
+          Examples include "Workstation as a Server" and remote connectivity
+          features in Workstation 8.0, Encrypted VMs in Workstation 7.0, and
+          Record/Replay in 6.5.
+    \item I've organized and coordinated cross-functional teams, working with
+          people across different business units to align goals across major
+          product lines. I've also helped set schedules, organize smaller
+          feature teams, and guide various releases through completion. These
+          activities were formalized for the 7.0 and 8.0 releases, where I acted
+          as Tech Lead.
     \item I developed, evangelized and instituted several improvements to
           software development process and infrastructure, including the
           adoption of Review Board for code review, and a set of tools and
@@ -95,7 +78,7 @@
           peers and management.
     \item I have mentored several interns and junior employees throughout my
           tenure.
-    \end{list2}
+    \end{list1}
 
     \ifcv
         \newpage
@@ -206,14 +189,31 @@
 
 
     %____________________________________________________________________________________
+    % Education
+    \section{\mysidestyle Education}
+
+    {\bf University of Colorado}, Boulder, Colorado.  May, 2006 \vspace{2mm}%
+    \begin{list1}
+    \item[] Bachelor of Science, Computer Science
+    \item[] Bachelor of Arts, Music
+    \end{list1}
+    \ifcv
+        {\bf Fairview High School}, Boulder, Colorado.  June, 2001 \vspace{2mm}%
+        \begin{list1}
+        \item[] Graduated with Honors
+        \end{list1}
+    \fi
+
+
+    %____________________________________________________________________________________
     % Other Achievements
     \section{\mysidestyle Other Achievements}
 
-    \begin{list2}
+    \begin{list1}
     \item Prepared and presented a poster on real-time histogram imaging at
           SIGGRAPH 2004, winning first place in the undergraduate division
           of the ACM/SIGGRAPH student research competition.
-    \item Earned the rank of second degree black belt in Kenpo Jujitsu, and
+    \item Earned the rank of third degree black belt in American Kenpo, and
           currently volunteer as a senior instructor at the Stanford Kenpo
           Karate club.
     \ifcv
@@ -221,12 +221,19 @@
               season and the University of Colorado Symphony Orchestra from 2001
               to 2004.
     \fi
-    \end{list2}
+    \end{list1}
 
+    \ifcv
+        \newpage
+    \fi
 
     %____________________________________________________________________________________
     % Patents, Papers and Talks
-    \section{\mysidestyle Patents, Papers, and Talks}
+    \ifcv
+        \section{\mysidestyle Patents, Papers, and Talks}
+    \else
+        \section{\mysidestyle Patents and Papers}
+    \fi
 
     {\bf``Graphical User Interface for Managing Virtual Machine''}{\it (patent pending)} \vspace{2mm}\\\vspace{1mm}%
     This patent application is for a particular combination of marking
@@ -240,10 +247,12 @@
     library and at
     \url{http://david.navi.cx/papers/real-time-histogram-imaging.pdf}
 
-    {\bf``Developing Review Board''} \vspace{2mm}\\\vspace{1mm}%
-    Talk on the challenges of redistributable webapps, and some specific
-    technologies in Review Board. Presented at DjangoCon 2008. Slides
-    available at \url{http://bit.ly/90Q76c}
+    \ifcv
+        {\bf``Developing Review Board''} \vspace{2mm}\\\vspace{1mm}%
+        Talk on the challenges of redistributable webapps, and some specific
+        technologies in Review Board. Presented at DjangoCon 2008. Slides
+        available at \url{http://bit.ly/90Q76c}
+    \fi
 
 
     \ifcv

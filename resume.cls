@@ -821,7 +821,7 @@
 \textheight 265mm
 
 \newenvironment{list1}{
-  \begin{list}{\ding{113}}{%
+  \begin{list}{$\bullet$}{%
       \setlength{\itemsep}{0in}
       \setlength{\parsep}{0in} \setlength{\parskip}{0in}
       \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 

@@ -832,7 +832,7 @@
       \setlength{\itemsep}{0in}
       \setlength{\parsep}{0in} \setlength{\parskip}{0in}
       \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
-      \setlength{\leftmargin}{0.25in}}}{\end{list}}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
 
 %\newcommand{\mysidestyle}{\footnotesize\sc}
 \newcommand{\mysidestyle}{\small\sc}

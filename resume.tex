@@ -1,6 +1,7 @@
 %________________________________________________________________________________________
 \documentclass[margin,line]{resume}
-\usepackage[pdftex,colorlinks=true,urlcolor=blue]{hyperref}
+%\usepackage[pdftex,colorlinks=true,urlcolor=blue]{hyperref}
+\usepackage[ocgcolorlinks,urlcolor=blue]{hyperref}
 \begin{document}
 \name{\Large David Trowbridge}
 \begin{resume}
@@ -8,19 +9,23 @@
 
     %____________________________________________________________________________________
     % Contact Information
-    \section{\mysidestyle Contact\\Information}\vspace{2mm}
+    \section{\mysidestyle Contact\\Information}
 
-    \begin{tabular}{@{} l @{\hspace{63mm}} r}
-    27766 Stirrup Way         & (650) 996-5273                                       \\
-    Los Altos Hills, CA 94022 & \href{mailto:trowbrds@gmail.com}{trowbrds@gmail.com} \\
-                              & \url{https://github.com/davidt}                      \\
-    \end{tabular}
+    27766 Stirrup Way \hfill (650) 996-5273\\
+    Los Altos Hills, CA 94022 \hfill \href{mailto:trowbrds@gmail.com}{trowbrds@gmail.com}\\
+    \hspace*{0pt} \hfill \href{https://github.com/davidt}{https://github.com/davidt}
+
+%    \begin{tabular}{@{} l @{\hspace{69mm}} r}
+%    27766 Stirrup Way         & (650) 996-5273                                              \\
+%    Los Altos Hills, CA 94022 & \href{mailto:trowbrds@gmail.com}{trowbrds@gmail.com}        \\
+%                              & \href{https://github.com/davidt}{https://github.com/davidt} \\
+%    \end{tabular}
 
     %____________________________________________________________________________________
     % Qualifications and Interests
     \section{\mysidestyle Qualifications\\and Interests}
 
-    \begin{list1}
+    \begin{list2}
         \item Keen interest and experience in web-based and desktop
               applications, including user interface design and development.
         \item Extensive experience with C, C++, Python, HTML5/Javascript/CSS,
@@ -31,64 +36,111 @@
         \item Broad experience working with the open-source community and a
               thorough understanding of software licensing issues.
         \item Ability to adapt quickly to new situations and environments.
-        \item Proven experience shipping large software projects on schedule
-              with high quality.
-    \end{list1}
+        \item Proven experience shipping large, high quality software projects
+              on schedule.
+    \end{list2}
 
 
     %____________________________________________________________________________________
     % Professional Experience
-    \section{\mysidestyle Professional\\Experience}
+    \section{\mysidestyle Professional\\and Open Source\\Experience}
+    {\bf VMware, Inc.}, Palo Alto, California \vspace{2mm}\\\vspace{1mm}%
+    {\sl Staff Engineer/Engineering Lead} \hfill {\bf August 2006 -- present}\\
+    At VMware, I have helped build and ship several major products as a Linux
+    user interface developer on the Workstation/Player team.
+    \vspace{3mm}
+    \begin{list2}
+    \item Responsible for the conception, design, and implementation of several
+          major features for Workstation and Player on Linux. Examples include
+          ``Workstation as a Server'' and remote connectivity features in
+          Workstation 8.0, Encrypted VMs in Workstation 7.0, and Record/Replay
+          in 6.5.
+    \item Organized and coordinated cross-functional teams, working with people
+          across different business units to align goals across major product
+          lines.
+    \item Set schedules, organized smaller feature teams, and guided various
+          releases through completion. These activities were formalized for the
+          7.0 and 8.0 releases, where I acted as Tech Lead.
+    \item Developed, evangelized and instituted several improvements to software
+          development process and infrastructure, including the adoption of
+          Review Board for code review, and a set of tools and procedures for
+          using Git on top of Perforce for local development.
+    \item Mediated conflicts between members of my team and other groups
+          including product management and QA, as well as between my peers and
+          management.
+    \item Mentored several interns and junior employees throughout my tenure.
+    \end{list2}
+
+    {\bf Review Board}, \href{http://www.reviewboard.org}{http://www.reviewboard.org} \vspace{2mm}\\\vspace{1mm}%
+    {\sl Founder, Maintainer} \hfill {\bf January 2007 -- present}\\
+    Review Board is a web-based tool for collaborative code review. Christian
+    Hammond and I started Review Board in order to create a tool which would
+    satisfy our needs both in the open source world, as well as handle the
+    challenge of maintaining a rigorous code review process in a quickly growing
+    team at VMware. It supports many revision control systems and provides a
+    powerful diff viewer with direct, in-line commenting.
+
+    Review Board is now a mature open source project with a large community. It
+    is used by thousands of companies and open-source projects, including
+    VMware, Yahoo!, Twitter, and Asterisk, and has had received contributions
+    from over 200 people.
+
+    {\bf Student Mentorship}\hfill{\bf 2008 -- present}\vspace{2mm}\\
+    Review Board has participated several times as a mentoring organization in
+    Google's Summer of Code program
+    (\href{http://code.google.com/soc}{http://code.google.com/soc})
+    and the Undergraduate Capstone Open Source Projects program
+    (\href{http://www.ucosp.ca}{http://www.ucosp.ca}). I have mentored nearly
+    fifty students from top universities, teaching ``real-world'' software
+    development practices.
+
+    \newpage
 
     {\bf Beanbag, Inc.}, Palo Alto, California \vspace{2mm}\\\vspace{1mm}%
-    {\sl Founder} \hfill {\bf November, 2010 -- present }\\
+    {\sl Founder} \hfill {\bf November 2010 -- present }\\
     Beanbag, Inc. is a business founded to support the open-source Review Board
     project. My efforts are currently focused on enabling the use of Review
     Board as a subscription service.
     \vspace{3mm}
-    \begin{list1}
-    \item I made changes to Review Board to allow secure, multi-tenancy hosting.
-          I built, supported, and advertised \url{RBCommons.com}, and grew sales
-          to make Beanbag, Inc. a profitable company.
-    \item I've helped with design and implementation of ``sponsored'' features
-          for Review Board.
-    \item I've handled administration aspects of the business, including
-          accounting and finance.
-    \end{list1}
+    \begin{list2}
+    \item Built, supported, and advertised \href{http://rbcommons.com}{RBCommons.com},
+          and grew sales to make Beanbag, Inc. a profitable company.
+    \item Added secure, multi-tenant hosting capabilities on top of the open
+          source version of Review Board.
+    \item Helped with design and implementation of ``sponsored'' features for
+          Review Board.
+    \item Managed administrative aspects of the business, including accounting
+          and finance.
+    \end{list2}
 
-    \vspace{3mm}
-    {\bf VMware, Inc.}, Palo Alto, California \vspace{2mm}\\\vspace{1mm}%
-    {\sl Staff Engineer/Engineering Lead} \hfill {\bf August, 2006 -- present}\\
-    At VMware, I have helped build and ship several major products as a Linux
-    user interface developer on the Workstation/Player team.
-    \vspace{3mm}
-    \begin{list1}
-    \item I've been responsible for the conception, design, and implementation
-          of several major features for Workstation and Player on Linux.
-          Examples include ``Workstation as a Server'' and remote connectivity
-          features in Workstation 8.0, Encrypted VMs in Workstation 7.0, and
-          Record/Replay in 6.5.
-    \item I've organized and coordinated cross-functional teams, working with
-          people across different business units to align goals across major
-          product lines. I've also helped set schedules, organize smaller
-          feature teams, and guide various releases through completion. These
-          activities were formalized for the 7.0 and 8.0 releases, where I acted
-          as Tech Lead.
-    \item I developed, evangelized and instituted several improvements to
-          software development process and infrastructure, including the
-          adoption of Review Board for code review, and a set of tools and
-          procedures for using Git on top of Perforce for local development.
-    \item I have mediated in conflicts between members of my team and other
-          groups including product management and QA, as well as between my
-          peers and management.
-    \item I have mentored several interns and junior employees throughout my
-          tenure.
-    \end{list1}
+    {\bf XChat-GNOME}, \href{https://live.gnome.org/Xchat-Gnome}{https://live.gnome.org/Xchat-Gnome} \vspace{2mm}\\\vspace{1mm}%
+    {\sl Founder, Maintainer} \hfill {\bf 2004 -- 2007}\\
+    XChat-GNOME was a new front-end to the popular ``Xchat'' IRC client, with an
+    emphasis on ease of use, simplicity and desktop integration. I created
+    XChat-GNOME because I was dissatisfied with all of the existing clients,
+    which burdened users with extensive configuration, steep learning curves,
+    and cluttered user interfaces. In 2007, I passed off maintenance of
+    XChat-GNOME to other members of the GNOME community.
+
+    {\bf Fyre}, \href{http://fyre.navi.cx}{http://fyre.navi.cx} \vspace{2mm}\\\vspace{1mm}%
+    {\sl Founder, Maintainer} \hfill {\bf 2003 -- 2006}\\
+    Fyre is a software system to produce computational art from chaotic maps
+    with advanced features such as animation and cluster rendering. One of the
+    algorithms developed for Fyre won first place in the undergraduate division
+    of the ACM student research competition at SIGGRAPH 2004.
 
     \ifcv
-        \newpage
+        {\bf BZFlag}, \href{http://www.bzflag.org}{http://www.bzflag.org} \vspace{2mm}\\\vspace{1mm}%
+        {\sl Core Developer} \hfill {\bf 2000 -- 2006}\\
+        BZFlag is an online, 3D multiplayer action game which runs on over a dozen
+        different platforms. It is one of the most popular games ever on Silicon
+        Graphics (sgi) machines. My contributions include large architecture changes
+        during the 1.8/1.9 development cycle, assistance with developing a new
+        rendering engine and many other small features, as well as several versions
+        of a WYSIWYG linux map editor named “bzedit” from 2000-2003.
+
         {\bf University of Colorado}, Boulder, Colorado \vspace{2mm}\\\vspace{1mm}%
-        {\sl Student Systems Administrator for ``CSops''} \hfill {\bf August, 2002 -- July, 2006}\\
+        {\sl Student Systems Administrator for ``CSops''} \hfill {\bf August 2002 -- July 2006}\\
         System and network administration, and support of a large conference
         center. This included administration of OpenBSD and Linux servers, as well
         as Linux and Solaris-based student labs. My network administration duties
@@ -98,7 +150,7 @@
         audio/video setup, including complex switching and control equipment.
 
         {\bf University of Colorado}, Boulder, Colorado \vspace{2mm}\\\vspace{1mm}%
-        {\sl Research Assistant} \hfill {\bf January, 2005 -- June, 2006}\\
+        {\sl Research Assistant} \hfill {\bf January 2005 -- June 2006}\\
         As an undergraduate research assistant, I participated in a research
         project dealing with analysis of motion capture data. I built software to
         create probability graphs (similar to markov chains) from a continuous
@@ -106,21 +158,29 @@
         systems, with the goal of creating stylistically consonant interpolations
         between poses in the context of dance choreography.
 
+        {\bf Evolution}, \href{http://gnome.org/projects/evolution}{http://gnome.org/projects/evolution} \vspace{2mm}\\\vspace{1mm}%
+        {\sl Contributor} \hfill {\bf 2003 -- 2005}\\
+        Evolution is a popular application for the GNOME desktop which provides
+        E-mail, addressbook and calendaring features. My particular contributions
+        include calendar publishing, weather calendars and updates to the
+        documentation. These contributions were made as part of the GNOME bounties
+        program sponsored by Novell.
+
         {\bf SGI Federal, Inc.}, Englewood, Colorado \vspace{2mm}\\\vspace{1mm}%
-        {\sl Intern} \hfill {\bf June, 2004 -- August, 2004}\\
+        {\sl Intern} \hfill {\bf June 2004 -- August 2004}\\
         At sgi, I ported customer software from IRIX/MIPS to Linux/Itanium2, and
         worked on integration of chromium (the open-source analog to sgi's OpenGL
-        Multipipe) with SGI visualization systems.  I also contributed to
+        Multipipe) with SGI visualization systems. I also contributed to
         performance analysis and benchmarking of database systems on various SGI
         Altix configurations.
 
         {\bf Niwot Networks}, Boulder, Colorado \vspace{2mm}\\\vspace{1mm}%
-        {\sl Intern} \hfill {\bf May, 2001 -- September, 2001}\\
+        {\sl Intern} \hfill {\bf May 2001 -- September 2001}\\
         As a summer intern, I began work on creating a Linux server for Niwot
         Networks' high-performance file transfer software {\sl Gigabyte Express}.
 
         {\bf SignalSoft}, Boulder, Colorado \vspace{2mm}\\\vspace{1mm}%
-        {\sl Intern} \hfill {\bf June, 2000 -- January, 2001}\\
+        {\sl Intern} \hfill {\bf June 2000 -- January 2001}\\
         At SignalSoft, an early mobile location-based services company, I built a
         variety of web-site back-end scripts for customer interaction and intranet
         automation. I also created applications for remote testing of WAP
@@ -128,86 +188,20 @@
         and partner demos.
     \fi
 
-    \ifcv
-    \else
-        \newpage
-    \fi
-
-    %____________________________________________________________________________________
-    % Open Source Software Experience
-    \section{\mysidestyle Open Source Software Experience}
-
-    {\bf Review Board}, \url{http://www.reviewboard.org} \vspace{2mm}\\\vspace{1mm}%
-    {\sl Founder, Maintainer} \hfill {\bf January, 2007 -- present}\\
-    Review Board is a web-based tool for collaborative code review. Christian
-    Hammond and I started Review Board in order to create a tool which would
-    satisfy our needs both in the open source world, as well as handle the
-    challenge of maintaining a rigorous code review process in a quickly growing
-    team at VMware. It supports many revision control systems and provides a
-    powerful diff viewer with direct, in-line commenting.
-
-    Review Board is used by hundreds of companies and open-source projects,
-    including VMware, Yahoo!, Twitter, and Asterisk, and has had contributions
-    from over 200 people. Review Board has participated several times as a
-    mentoring organization in Google's Summer of Code program
-    (\url{http://code.google.com/soc}) and the Undergraduate Capstone Open
-    Source Projects program (\url{http://www.ucosp.ca}).
-
-    \ifcv
-        \newpage
-    \fi
-
-    {\bf XChat-GNOME}, \url{https://live.gnome.org/Xchat-Gnome} \vspace{2mm}\\\vspace{1mm}%
-    {\sl Founder, Maintainer} \hfill {\bf 2004 -- 2007}\\
-    XChat-GNOME was a new front-end to the popular ``Xchat'' IRC client, with an
-    emphasis on ease of use, simplicity and desktop integration.  I created
-    XChat-GNOME because I was dissatisfied with all of the existing clients,
-    which all required extensive configuration and learning curves to start
-    using, and then got in the user's way with lots of cluttered UI.
-    In 2007, I passed off maintenance of XChat-GNOME to other members of the
-    GNOME community.
-
-    {\bf Fyre}, \url{http://fyre.navi.cx} \vspace{2mm}\\\vspace{1mm}%
-    {\sl Founder, Maintainer} \hfill {\bf 2003 -- 2006}\\
-    Fyre is a software system to produce computational art from chaotic maps
-    with advanced features such as animation and cluster rendering.  One of the
-    algorithms developed for Fyre won first place in the undergraduate division
-    of the ACM student research competition at SIGGRAPH 2004.
-
-    \ifcv
-        {\bf BZFlag}, \url{http://www.bzflag.org} \vspace{2mm}\\\vspace{1mm}%
-        {\sl Core Developer} \hfill {\bf 2000 -- 2006}\\
-        BZFlag is an online, 3D multiplayer action game which runs on over a dozen
-        different platforms.  It is one of the most popular games ever on Silicon
-        Graphics (sgi) machines. My contributions include large architecture changes
-        during the 1.8/1.9 development cycle, assistance with developing a new
-        rendering engine and many other small features, as well as several versions
-        of a WYSIWYG linux map editor named “bzedit” from 2000-2003.
-
-        {\bf Evolution}, \url{http://gnome.org/projects/evolution} \vspace{2mm}\\\vspace{1mm}%
-        {\sl Contributor} \hfill {\bf 2003 -- 2005}\\
-        Evolution is a popular application for the GNOME desktop which provides
-        E-mail, addressbook and calendaring features.  My particular contributions
-        include calendar publishing, weather calendars and updates to the
-        documentation.  These contributions were made as part of the GNOME bounties
-        program sponsored by Novell.
-    \fi
-
-
     %____________________________________________________________________________________
     % Education
     \section{\mysidestyle Education}
 
-    {\bf University of Colorado}, Boulder, Colorado.  May, 2006 \vspace{2mm}%
-    \begin{list1}
+    {\bf University of Colorado}, Boulder, Colorado. May 2006 \vspace{2mm}%
+    \begin{list2}
     \item[] Bachelor of Science, Computer Science
     \item[] Bachelor of Arts, Music
-    \end{list1}
+    \end{list2}
     \ifcv
-        {\bf Fairview High School}, Boulder, Colorado.  June, 2001 \vspace{2mm}%
-        \begin{list1}
+        {\bf Fairview High School}, Boulder, Colorado. June 2001 \vspace{2mm}%
+        \begin{list2}
         \item[] Graduated with Honors
-        \end{list1}
+        \end{list2}
     \fi
 
     %____________________________________________________________________________________
@@ -218,25 +212,24 @@
         \section{\mysidestyle Patents and Papers}
     \fi
 
-    {\bf``Graphical User Interface for Managing Virtual Machines''}{\it (patent pending)} \vspace{2mm}\\\vspace{1mm}%
+    {\bf``Graphical User Interface for Managing Virtual Machines''}{\it (patent pending)} \vspace{2mm}\\
     This patent application is for a particular combination of marking
     items as favorite, organization, and search capabilities, which combine
     to dramatically improve the user experience when managing large numbers
     of virtual machines.
 
-    {\bf``Real-time Histogram Imaging''} \vspace{2mm}\\\vspace{1mm}%
+    {\bf``Real-time Histogram Imaging''} \vspace{2mm}\\
     This work was presented as a poster at SIGGRAPH 2004, winning first place in
     the undergraduate division of the ACM/SIGGRAPH student research competition.
     This paper is based on that work, and was the entry to the 2004-2005 ACM
     student research competition grand finals. Available in the ACM digital
-    library and at
-    \url{http://david.navi.cx/papers/real-time-histogram-imaging.pdf}
+    library and at \href{http://bit.ly/WpwHEt}{http://bit.ly/WpwHEt}
 
     \ifcv
-        {\bf``Developing Review Board''} \vspace{2mm}\\\vspace{1mm}%
+        {\bf``Developing Review Board''} \vspace{2mm}\\
         Talk on the challenges of redistributable webapps, and some specific
         technologies in Review Board. Presented at DjangoCon 2008. Slides
-        available at \url{http://bit.ly/90Q76c}
+        available at \href{http://bit.ly/90Q76c}{http://bit.ly/90Q76c}
     \fi
 
     \ifcv
@@ -247,20 +240,18 @@
     % Other Achievements
     \section{\mysidestyle Other Achievements}
 
-    \begin{list1}
-    \item I've earned the rank of third degree black belt in American Kenpo, and
-          currently volunteer as a senior instructor at the Stanford Kenpo
-          Karate club.
-    \item I've been presented with numerous recognition awards at VMware,
-          including winning an internal innovation contest and being awarded
-	  with a business-unit wide ``making a difference'' award (nominated by
-	  peers).
+    \begin{list2}
+    \item Third degree black belt in American Kenpo and volunteer senior instructor
+          at the Stanford Kenpo Karate Association.
+    \item Numerous recognition awards at VMware, including winning an internal
+          innovation contest and a business-unit wide ``making a difference''
+          award (nominated by peers).
     \ifcv
         \item 'Cellist in the Longmont Symphony Orchestra during the 2000-2001
               season and the University of Colorado Symphony Orchestra from 2001
               to 2004.
     \fi
-    \end{list1}
+    \end{list2}
 
 
     \ifcv
@@ -269,7 +260,7 @@
         % Misc
         \section{}
         {\sl Further detail, older employment, additional open-source work, and references
-	     available upon request.}
+             available upon request.}
     \fi
 
 
